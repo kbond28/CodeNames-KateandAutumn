@@ -79,7 +79,6 @@ horseshoe
 hospital
 hotel
 ice
-ice cream
 india
 iron
 ivory
@@ -100,7 +99,6 @@ lawyer
 lead
 lemon
 limousine
-leadlock
 log
 mammoth
 maple
@@ -115,7 +113,6 @@ mouth
 mug
 needle
 net
-new york
 night
 note
 novel
@@ -123,7 +120,7 @@ nurse
 nut
 oil
 olive
-olympus
+octopus
 opera
 orange
 paper
@@ -185,4 +182,3 @@ whale
 whip
 worm
 yard
-
