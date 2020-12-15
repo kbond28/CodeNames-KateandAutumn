@@ -18,7 +18,7 @@ assassin = random.sample([i for i in lines if i not in red and i not in blue and
 
 inpu = input("Welcome to Codenames. Type '1' to play the codemaster or type '2' to play the agent. ")
 
-
+#discount bad words in the model - source: James Mullenbach
 def verify(inp, clue):
     if '_' in clue:
         return False
@@ -137,7 +137,7 @@ if inpu == '2':
         for l in grouped:
             print("".join("{:<26}".format(x) for x in l))
 
-        #generate a random clue
+        #generate a random clue - source: James Mullenbach
         word = random.choice(blue)
         similar = [(c.lower(), s) for c,s in model.most_similar(positive=[word], topn=50, restrict_vocab = 60000)]
         clue = [(c, s) for c, s in similar if verify(word, c)][:1]
