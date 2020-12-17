@@ -6,7 +6,7 @@ import operator
 import random
 
 #modeling
-filename = '/Users/autumnkinchen/data/GoogleNews-vectors-negative300.bin.gz'
+filename = '/Users/autumnkinchen/data/GoogleNews-vectors-negative300.bin.gz' ##Replace this with the path in your own machine
 model = gensim.models.KeyedVectors.load_word2vec_format(filename, binary=True)
 lines = open('wordlist.txt').read().splitlines()
 
@@ -86,9 +86,7 @@ if inpu == '1':
 
             rand = random.choice(red)
             red.remove(rand)
-
-            # wordlist.remove(guess)
-            # wordlist.remove(rand)
+            wordlist.remove(rand)
 
             # removing word from the board
             for w in board:
